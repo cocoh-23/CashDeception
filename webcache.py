@@ -5,7 +5,7 @@ headers = {"Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image
 cookies = {"Paste Cookies Here"}
 
 short_extensions = ['css','png','jpg','gif','txt','js','swf','bmp']
-large_extensions = ['aif','aiff','css','au','avi','bin','bmp','cab','carb','cct','cdf','class','css','doc',' dcr',' dtd',' gcf',' gff',' gif',' grv',' hdml',' hqx',' ico',' ini',' jpeg',' jpg',' js',' mov',' mp3',' nc',' pct',' ppc',' pws',' swa',' swf',' txt',' vbs',' w32',' wav',' wbmp',' wml',' wmlc',' wmls',' wmlsc',' xsd',' zip']
+large_extensions = ['7z','csv','gif','midi','png','tif','zip','avi','doc','gz','mkv','ppt','tiff','zst','avif','docx','ico','mp3','pptx','ttf','apk','dmg','iso','mp4','ps','webm','bin','ejs','jar','ogg','rar','webp','bmp','','eot','jpg','otf','svg','woff','bz2','eps','jpeg','pdf','svgz','woff2','class','exe','js','pict','swf','xls','css','flac','mid','pls','tar','xlsx','zip','zst']
 
 auth = requests.Session()
 results=[]
@@ -37,7 +37,7 @@ try:
 					print 'With Status Code : '+str(resp.status_code)
 					print '\n'
 				print '\n~~~~~ATTACK~~~~~\n'
-			for i in short_extensions:
+			for i in large_extensions:
 				i = i.strip('\n')
 				i = i.strip('\r')
 				i = 'testsheet.'+i
